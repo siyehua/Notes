@@ -36,13 +36,14 @@ Head First 设计模式|Update
 Android Studio|更新时间
 ---|---
 [Gradle 与Project Structure详解](/AndroidStudio/GradleAndProjectStructrue)|2014-12-29
+[Gradle自动化构建](/AndroidStudio/GradleAutoTask)|2017-03-30
 [打造AS的Project视图](/AndroidStudio/MakeProjectView)|2015-01-05
 [得到第三方工具对应的jar包](/AndroidStudio/CompileToJar)|2015-08-15
 [快捷键大全](/AndroidStudio/KeyMap)|2015-01-04
 [目录结构详解](/AndroidStudio/DirectoryInfo)|2014-12-24
 
 
-Android |更新时间
+Android|更新时间
 ---|---
 [ConstraintLayout介绍](/Android/ConstraintLayout)|2016-09-24
 [InputView 动态输入框](https://github.com/siyehua/InputView)|2016-11-09
