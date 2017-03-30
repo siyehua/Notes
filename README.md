@@ -36,18 +36,18 @@ Head First 设计模式|Update
 
 Android Studio|更新时间
 ---|---
-[Gradle 与Project Structure详解](/Android Studio/Gradle And Project Structrue)|2014-12-29
-[打造AS的Project视图](/Android Studio/Make Project View)|2015-01-05
-[得到第三方工具对应的jar包](/Android Studio/CompileToJar)|2015-08-15
-[快捷键大全](/Android Studio/KeyMap)|2015-01-04
-[目录结构详解](/Android Studio/Directory Info)|2014-12-24
+[Gradle 与Project Structure详解](/AndroidStudio/GradleAndProjectStructrue)|2014-12-29
+[打造AS的Project视图](/AndroidStudio/MakeProjectView)|2015-01-05
+[得到第三方工具对应的jar包](/AndroidStudio/CompileToJar)|2015-08-15
+[快捷键大全](/AndroidStudio/KeyMap)|2015-01-04
+[目录结构详解](/AndroidStudio/Directory Info)|2014-12-24
 
 
 Android |更新时间
 ---|---
 [ConstraintLayout介绍](/Android/ConstraintLayout)|2016-09-24
 [InputView 动态输入框](https://github.com/siyehua/InputView)|2016-11-09
-[Material Design Elevation](/Android/Material Design Elevation)|2016-08-17
+[MaterialDesignElevation](/Android/MaterialDesignElevation)|2016-08-17
 [QuicklySendImage 仿微信QQ快速发送图片](https://github.com/siyehua/QuicklySendImage)|2016-11-24
 [StyleTextView](https://github.com/siyehua/StyleTextView)|2016-09-14
 [Volley NetWorkImageView空指针问题](/Android/NetWorkImageView_Pointer)|2015-04-27
@@ -67,6 +67,6 @@ Other|更新时间
 [发布libiary到jarcenter](/Other/Jarcenter)|2016-11-09
 [股票图,K线图](https://github.com/siyehua/KLineGraph)|2017-01-15
 [推送问题](/Other/PushProblem)|2016-06-02
-[微信支付](/Other/WeChat Pay)|2016-06-03
-[移动支付](/Other/APP Pay)|2016-06-02
-[支付宝支付](/Other/ZhiFuBao Pay)|2016-06-07
+[微信支付](/Other/WeChatPay)|2016-06-03
+[移动支付](/Other/APPPay)|2016-06-02
+[支付宝支付](/Other/ZhiFuBaoPay)|2016-06-07

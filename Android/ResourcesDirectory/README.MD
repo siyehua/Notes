@@ -57,9 +57,9 @@ Bitmap files (.png, .9.png, .jpg, .gif) or XML files that are compiled into the 
 ### ��ԴĿ¼��׺����
 ��android�Լ����ɵ�Ŀ¼��,���ǿ��Կ������¼���Ŀ¼
 
-![Image](/Android/Resources Directory/_001.png)
+![Image](/Android/ResourcesDirectory/_001.png)
 
-![Image](/Android/Resources Directory/_002.png)
+![Image](/Android/ResourcesDirectory/_002.png)
 
 ��ЩĿ¼�ĵĺ�����Բο�sdk�ĵ��ĵڶ��ű�.�ֱ���:
 #### MCC and MNC(�����˼��˵ͨ�ŷ�ʽ.�����ƶ�����ͨ��ͨ�ŷ�ʽ,3G,4Gʹ�õļ���Ҳ�ǲ�һ����)
@@ -177,9 +177,9 @@ h1024dp
 
 #### 
 
-![Image](/Android/Resources Directory/_001.png)
+![Image](/Android/ResourcesDirectory/_001.png)
 
-![Image](/Android/Resources Directory/_002.png)
+![Image](/Android/ResourcesDirectory/_002.png)
 
 �����ٿ��⼸��Ŀ¼
 
@@ -200,7 +200,7 @@ values-hdpi//�߷ֱ���
 
 �����ĵ��ĺ������ӽ���.����ôһ��ͼ:
 
-![Image](/Android/Resources Directory/_003.PNG)
+![Image](/Android/ResourcesDirectory/_003.PNG)
 
 ���еڶ�������˵:MCC first,then MNC,then language,and so on.
 

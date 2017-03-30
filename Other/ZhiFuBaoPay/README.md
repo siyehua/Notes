@@ -19,7 +19,7 @@
 1. 接入:注册支付宝账户,提交相应的资料并通过审核,入驻基本结束了.
 2. 创建[自用型应用](https://openhome.alipay.com/platform/createApp.htm?enctraceid=_xtIFIWCn10r8klM38IZIFMDOi3W5jACHL5jm8OtjcU,).入驻了并不能马上使用,前面仅仅是提交的个人/企业 账号通过了,还需要创建移动应用.
 
-   提交应用会涉及到一个叫本身的应用签名,这个签名的算法是通用的,具体获得签名代码与之前一篇微信开发中的签名一直,具体[签名](/Other/WeChat Pay/README.md#app sign)
+   提交应用会涉及到一个叫本身的应用签名,这个签名的算法是通用的,具体获得签名代码与之前一篇微信开发中的签名一直,具体[签名](/Other/WeChatPay/README.md#app sign)
 
 3. 设RAS(SHA1)公钥.
 
@@ -39,26 +39,26 @@
    **需要填写的地方:(注意这个非常重要,如果没有填完全,直接导致你无法调用成功)**
     * 登录后,跳转到[管理中心](https://openhome.alipay.com/platform/manageApp.htm)
 
-      ![管理中心图片](/Other/ZhiFuBao Pay/_003.png)
+      ![管理中心图片](/Other/ZhiFuBaoPay/_003.png)
 
       我的应用中,包含两个应用,一个是基础应用,签约的时候自动创建的,且不可删除.
 
       一个是上述步骤中自主创建的应用.
     * 点击签约应用的查看→选择应用环境→设置图中红框部分
 
-      ![签约应用](/Other/ZhiFuBao Pay/_004.png)
+      ![签约应用](/Other/ZhiFuBaoPay/_004.png)
 
     * 同样的方法设置自己创建的应用的RSA公钥.
     * 设置合作伙伴RAS公钥.
 
-      ![合作伙伴](/Other/ZhiFuBao Pay/_005.png)
+      ![合作伙伴](/Other/ZhiFuBaoPay/_005.png)
     * 设置无线产品RAS公钥.
 
-      ![无线产品](/Other/ZhiFuBao Pay/_006.png)
+      ![无线产品](/Other/ZhiFuBaoPay/_006.png)
 
    **一共有四处需要设置.**如没有设置成功会报如下错误.
 
-   ![RSA不正确错误提示](/Other/ZhiFuBao Pay/_007.png)
+   ![RSA不正确错误提示](/Other/ZhiFuBaoPay/_007.png)
 
    这个错误网上一搜一大堆,但是都是告诉你应用的公钥和你填写的私钥不正确,其实并不是这样.因为支付宝现在(2016-06-07)填写
    公钥的时候,可以提供工具自主验证,上述步骤中有讲到.如果你的验证通过了,那你的公钥和私钥肯定是可以匹配的.**问题就是出现在有些地方没有
@@ -86,11 +86,11 @@
 
 #### 功能流程
 
-![无线产品](/Other/ZhiFuBao Pay/_001.png)
+![无线产品](/Other/ZhiFuBaoPay/_001.png)
 
 #### 数据交互
 
-![无线产品](/Other/ZhiFuBao Pay/_002.png)
+![无线产品](/Other/ZhiFuBaoPay/_002.png)
 
 
 ### Android详细代码

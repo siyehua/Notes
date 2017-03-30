@@ -72,7 +72,7 @@
 
  微信支付大概流程:
 
- ![Image](/Other/WeChat Pay/_001.png)
+ ![Image](/Other/WeChatPay/_001.png)
 
  具体请参考[官方详细过程](https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=8_3)
 
