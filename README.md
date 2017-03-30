@@ -57,12 +57,12 @@ Android |更新时间
 [监听应用是否切换到后台](/Android/AppIsBackground)|2015-03-12
 [热修复方案](/Android/HotFix)|2016-06-02
 [无限滑动ViewPager](https://github.com/siyehua/InfiniteViewPager)|2016-11-14
-[资源目录介绍](/Android/Resources Directory)|2016-08-17
+[资源目录介绍](/Android/ResourcesDirectory)|2016-08-17
 [组件化Demo](https://github.com/siyehua/MyApplication)|2016-10-29
 
 Other|更新时间
 ---|---
-[Activity启动速度过慢问题分析](/Other/StartActivity Problem)|2016-11-02
+[Activity启动速度过慢问题分析](/Other/StartActivityProblem)|2016-11-02
 [WeChat tinker demo](https://github.com/siyehua/WeChatHotFixDemo)|2016-11-16
 [发布libiary到jarcenter](/Other/Jarcenter)|2016-11-09
 [股票图,K线图](https://github.com/siyehua/KLineGraph)|2017-01-15
