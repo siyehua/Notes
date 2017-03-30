@@ -1,10 +1,8 @@
-## Material Design Elevatio����(��)
-
-Ϊ�˱��ⲻͬ��Material Object���û������,��ѹ�Ȳ���ʱ,Material Object��̬�ĸı�����Elevation�������˴˴����Է�,
-�ȸ��Ƽ���ͬ��Material ObjecҪ�в�ͬ��Elevation
+## Material Design Elevatio
 
 
-### ������
+
+### Elevation
 Elevation (dp)|Component
 ---|---
 24|Dialog<br>Picker
@@ -32,7 +30,7 @@ Elevation (dp)|Component
 2|Card (resting elevation)<br>Raised button (resting elevation)<br>Quick entry / Search bar (resting elevation)
 1|Switch
 
-### Z������ͼ
+### Z
 
 ![Image](/Android/MaterialDesignElevation/_001.png)
 
