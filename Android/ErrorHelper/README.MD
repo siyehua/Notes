@@ -1,4 +1,5 @@
-�����ռ���
+错误收集类
+
 ```java
 package com.wbai.qqsd.view;
 import java.io.File;
@@ -26,88 +27,88 @@ import android.widget.Toast;
 import com.wbai.qqsd.common.Constants;
 import com.wbai.qqsd.common.SiAppLication;
 /**
- * UncaughtException������,��������Uncaught�쳣��ʱ��<br>
- * �и������ӹܳ���,����¼���ʹ��󱨸�.
+ * UncaughtException处理类,当程序发生Uncaught异常的时候<br>
+ * 有该类来接管程序,并记录发送错误报告.
  */
 @SuppressLint("SimpleDateFormat")
 public class CrashHandler implements UncaughtExceptionHandler {
 	public static final String TAG = "CrashHandler";
-	// ϵͳĬ�ϵ�UncaughtException������
+	// 系统默认的UncaughtException处理类
 	private Thread.UncaughtExceptionHandler mDefaultHandler;
-	// CrashHandlerʵ��
+	// CrashHandler实例
 	private static CrashHandler INSTANCE;
-	// �����Context����
+	// 程序的Context对象
 	private Context mContext;
-	// �����洢�豸��Ϣ���쳣��Ϣ
+	// 用来存储设备信息和异常信息
 	private Map<String, String> infos = new HashMap<String, String>();
-	// ���ڸ�ʽ������,��Ϊ��־�ļ�����һ����
+	//// 用于格式化日期,作为日志文件名的一部分
 	private DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
-	/** ��ֻ֤��һ��CrashHandlerʵ�� */
+	/** 保证只有一个CrashHandler实例 */
 	private CrashHandler() {
 	}
-	/** ��ȡCrashHandlerʵ�� ,����ģʽ */
+	/** 获取CrashHandler实例 ,单例模式 */
 	public synchronized static CrashHandler getInstance() {
 		if (INSTANCE == null)
 			INSTANCE = new CrashHandler();
 		return INSTANCE;
 	}
 	/**
-	 * ��ʼ��
-	 *
-	 * @param context
-	 */
+    	 * 初始化
+    	 *
+    	 * @param context
+    	 */
 	public void init(Context context) {
 		mContext = context;
-		// ��ȡϵͳĬ�ϵ�UncaughtException������
+		// 获取系统默认的UncaughtException处理器
 		mDefaultHandler = Thread.getDefaultUncaughtExceptionHandler();
-		// ���ø�CrashHandlerΪ�����Ĭ�ϴ�����
+		// 设置该CrashHandler为程序的默认处理器
 		Thread.setDefaultUncaughtExceptionHandler(this);
 	}
 	/**
-	 * ��UncaughtException����ʱ��ת��ú���������
-	 */
+    	 * 当UncaughtException发生时会转入该函数来处理
+    	 */
 	@Override
 	public void uncaughtException(Thread thread, Throwable ex) {
 		if (handleException(ex) && mDefaultHandler != null) {
-			// ����û�û�д�������ϵͳĬ�ϵ��쳣������������
+			// 如果用户没有处理则让系统默认的异常处理器来处理
 			mDefaultHandler.uncaughtException(thread, ex);
-		} else {// �˳�����Ӧ��
+		} else {// 退出整个应用
 			SiAppLication.getApplicationInstance().exit();
 		}
 	}
 	/**
-	 * �Զ��������,�ռ�������Ϣ ���ʹ��󱨸�Ȳ������ڴ����.
-	 *
-	 * @param ex
-	 * @return true:��������˸��쳣��Ϣ;���򷵻�false.
-	 */
+    	 * 自定义错误处理,收集错误信息 发送错误报告等操作均在此完成.
+    	 *
+    	 * @param ex
+    	 * @return true:如果处理了该异常信息;否则返回false.
+    	 */
 	private boolean handleException(Throwable ex) {
 		if (ex == null) {
 			return false;
 		}
-		new Thread() {// ʹ��Toast����ʾ�쳣��Ϣ
+		new Thread() {// 使用Toast来显示异常信息
 			@Override
 			public void run() {
 				Looper.prepare();
-				Toast.makeText(mContext, "�ܱ�Ǹ,��������쳣,�����˳�.", Toast.LENGTH_LONG)
+				Toast.makeText(mContext, "很抱歉,程序出现异常,即将退出.", Toast.LENGTH_LONG)
 						.show();
 				Looper.loop();
 			}
 		}.start();
-		collectDeviceInfo(mContext);// �ռ��豸������Ϣ
-		String errorPath = saveCrashInfo2File(ex);// ������־�ļ�
-		if (errorPath != null) {// ���������־��Ϊ��,�����ϴ�������־��������(��δ����)
+		collectDeviceInfo(mContext);// 收集设备参数信息
+		String errorPath = saveCrashInfo2File(ex);// 保存日志文件
+		if (errorPath != null) {// 如果错误日志不为空,可以上传错误日志到服务器(暂未处理)
 		}
 		return true;
 	}
 	/**
-	 * �ռ��豸������Ϣ
-	 *
-	 * @param ctx
-	 */
+    	 * 收集设备参数信息
+    	 *
+    	 * @param ctx
+    	 */
 	private void collectDeviceInfo(Context ctx) {
-		infos.put("time", formatter.format(new Date()));// BUG������ʱ��
-		infos.put("className", ctx.getClass().getName() + "");// �õ���ǰ���������
+		infos.put("time", formatter.format(new Date()));// BUG发生的时间
+		infos.put("className", ctx.getClass().getName() + "");// 得到当前的类的名称
 		try {
 			PackageManager pm = ctx.getPackageManager();
 			PackageInfo pi = pm.getPackageInfo(ctx.getPackageName(),
@@ -116,14 +117,14 @@ public class CrashHandler implements UncaughtExceptionHandler {
 				String versionName = pi.versionName == null ? "null"
 						: pi.versionName;
 				String versionCode = pi.versionCode + "";
-				infos.put("versionName", versionName);// �õ��汾����
-				infos.put("versionCode", versionCode);// �õ��汾��
+				infos.put("versionName", versionName);// 得到版本名字
+				infos.put("versionCode", versionCode);// 得到版本号
 			}
 		} catch (NameNotFoundException e) {
 			Log.e(TAG, "an error occured when collect package info", e);
 		}
 		Field[] fields = Build.class.getDeclaredFields();
-		for (Field field : fields) {// ���÷����ȡ�豸��Ϣ
+		for (Field field : fields) {// 利用反射获取设备信息
 			try {
 				field.setAccessible(true);
 				infos.put(field.getName(), field.get(null).toString());
@@ -134,21 +135,21 @@ public class CrashHandler implements UncaughtExceptionHandler {
 		}
 	}
 	/**
-	 * ���������Ϣ���ļ���
-	 *
-	 * @param ex
-	 * @return �����ļ�����,���ڽ��ļ����͵�������
-	 */
+    	 * 保存错误信息到文件中
+    	 *
+    	 * @param ex
+    	 * @return 返回文件名称,便于将文件传送到服务器
+    	 */
 	private String saveCrashInfo2File(Throwable ex) {
 		StringBuffer sb = new StringBuffer();
-		for (Map.Entry<String, String> entry : infos.entrySet()) {// ƴ�Ӵ����ַ���
+		for (Map.Entry<String, String> entry : infos.entrySet()) {// 拼接错误字符串
 			String key = entry.getKey();
 			String value = entry.getValue();
 			sb.append(key + "=" + value + "\n");
 		}
 		Writer writer = new StringWriter();
 		PrintWriter printWriter = new PrintWriter(writer);
-		ex.printStackTrace(printWriter);// ��ӡ������Ϣ
+		ex.printStackTrace(printWriter);// 打印错误信息
 		Throwable cause = ex.getCause();
 		while (cause != null) {
 			cause.printStackTrace(printWriter);
@@ -157,7 +158,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 		printWriter.close();
 		String result = writer.toString();
 		sb.append(result);
-		try {// �Ѵ�����־���浽ָ����Ŀ¼
+		try {// 把错误日志保存到指定的目录
 			long timestamp = System.currentTimeMillis();
 			String time = formatter.format(new Date());
 			String fileName = "crash-" + time + "-" + timestamp + ".log";
@@ -181,8 +182,9 @@ public class CrashHandler implements UncaughtExceptionHandler {
 }
 ```
 
-Application������
-����������,�˳�����(ע�⵱��������ʱ,���͹㲥,��תIntent�ȷ�ʽ������Ч��)
+Application类设置 监听到错误,退出程序(注意当发生错误时,发送广播,跳转Intent等方式都是无效的)
+
+
 ```java
 package com.siyehua.testanimation;
 import java.util.LinkedList;
@@ -223,8 +225,8 @@ public class SiApplication extends Application {
 		a.setOnErrorListener(new ErrorListener() {
 			@Override
 			public void error() {
-				Log.e("���յ�������Ϣ", "");
-				sendBroadcast(new Intent("siyehua"));//�˾���Ч,�޷����͹㲥,����������
+				Log.e("接收到错误消息", "");
+				sendBroadcast(new Intent("siyehua"));//此句无效,无法发送广播,或启动服务
 			}
 		});
 	}
@@ -232,7 +234,8 @@ public class SiApplication extends Application {
 ```
 
 
-���һ��:��BaseActivity��Activity���뵽������
+最后一步:在BaseActivity中Activity加入到集合中
+
 ```java
 SiApplication.getInstance().addActivity(this);
 ```
