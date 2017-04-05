@@ -46,6 +46,7 @@ Android Studio|更新时间
 Android|更新时间
 ---|---
 [ConstraintLayout介绍](/Android/ConstraintLayout)|2016-09-24
+[Auto ReName Module Res](https://github.com/siyehua/AutoReNameModuleRes)|2017-04-05
 [InputView 动态输入框](https://github.com/siyehua/InputView)|2016-11-09
 [LayoutStatusControl](https://github.com/siyehua/LayoutStatus)|2017-04-01
 [MaterialDesignElevation](/Android/MaterialDesignElevation)|2016-08-17
