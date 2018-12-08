@@ -38,7 +38,6 @@ Android Studio|更新时间
 [Gradle 与Project Structure详解](/AndroidStudio/GradleAndProjectStructrue)|2014-12-29
 [Gradle自动化构建](/AndroidStudio/GradleAutoTask)|2017-03-30
 [打造AS的Project视图](/AndroidStudio/MakeProjectView)|2015-01-05
-[得到第三方工具对应的jar包](/AndroidStudio/CompileToJar)|2015-08-15
 [快捷键大全](/AndroidStudio/KeyMap)|2015-01-04
 [目录结构详解](/AndroidStudio/DirectoryInfo)|2014-12-24
 
