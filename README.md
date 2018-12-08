@@ -24,7 +24,7 @@ Head First 设计模式|Update
 [10.状态模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter10)|2017-02-15
 [11.代理模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter11)|2017-02-15
 [12.复合模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter12)|2017-02-15
-[13.与设计模式相处](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter13)|2017-02-15
+[13.与设计模式相处](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chpter13)|2017-02-15
 
 
 图解HTTP|Update
