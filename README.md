@@ -30,6 +30,7 @@ Android Studio|更新时间
 
 Other|更新时间
 ---|---
+[Java 函数式编程](/Other/Java8Fuction)|2018.03.01
 [Activity启动速度过慢问题分析](/Other/StartActivityProblem)|2016-11-02
 [WeChat tinker demo](https://github.com/siyehua/WeChatHotFixDemo)|2016-11-16
 [发布libiary到jarcenter](/Other/Jarcenter)|2016-11-09
