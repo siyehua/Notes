@@ -1,16 +1,8 @@
 ## 技术栏目
 
-Android Studio|更新时间
----|---
-[Gradle 与Project Structure详解](/AndroidStudio/GradleAndProjectStructrue)|2014-12-29
-[Gradle自动化构建](/AndroidStudio/GradleAutoTask)|2017-03-30
-[打造AS的Project视图](/AndroidStudio/MakeProjectView)|2015-01-05
-[快捷键大全](/AndroidStudio/KeyMap)|2015-01-04
-[目录结构详解](/AndroidStudio/DirectoryInfo)|2014-12-24
-
-
 Android|更新时间
 ---|---
+[浅谈 Android Architecture Components 使用和原理](/Android/AAC)|2017-08-15
 [ConstraintLayout介绍](/Android/ConstraintLayout)|2016-09-24
 [Auto ReName Module Res](https://github.com/siyehua/AutoReNameModuleRes)|2017-04-05
 [InputView 动态输入框](https://github.com/siyehua/InputView)|2016-11-09
@@ -27,6 +19,14 @@ Android|更新时间
 [无限滑动ViewPager](https://github.com/siyehua/InfiniteViewPager)|2016-11-14
 [资源目录介绍](/Android/ResourcesDirectory)|2016-08-17
 [组件化Demo](https://github.com/siyehua/MyApplication)|2016-10-29
+
+Android Studio|更新时间
+---|---
+[Gradle 与 Project Structure详解](/AndroidStudio/GradleAndProjectStructrue)|2014-12-29
+[Gradle自动化构建](/AndroidStudio/GradleAutoTask)|2017-03-30
+[打造AS的Project视图](/AndroidStudio/MakeProjectView)|2015-01-05
+[快捷键大全](/AndroidStudio/KeyMap)|2015-01-04
+[目录结构详解](/AndroidStudio/DirectoryInfo)|2014-12-24
 
 Other|更新时间
 ---|---
