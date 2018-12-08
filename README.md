@@ -1,36 +1,3 @@
-## 四叶花（Ary)
-
-
-## 读书栏目
-Algorithms(算法)|Update
----|---
-[总章update...](/Algorithms/readme.md)|2016-12-14
-[第一章:基础](/Algorithms/chapter1/readme.md)|2016-12-14
-[第二章:排序](/Algorithms/chapter2/readme.md)|2016-12-28
-
-
-Head First 设计模式|Update
----|---
-[读书总结](https://github.com/siyehua/DesignPatterns)|2017-02-06
-[1.设计模式入门(策略模式)](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter1)|2017-02-06
-[2.观察者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter2)|2017-02-07
-[3.装饰者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter3)|2017-02-08
-[4.工厂模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter4)|2017-02-09
-[5.单例模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter5)|2017-02-10
-[6.命令模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter6)|2017-02-11
-[7.适配器与外观模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter7)|2017-02-12
-[8.模板方法模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter8)|2017-02-13
-[9.迭代器与组合模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter9)|2017-02-14
-[10.状态模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter10)|2017-02-15
-[11.代理模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter11)|2017-02-15
-[12.复合模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter12)|2017-02-15
-[13.与设计模式相处](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chpter13)|2017-02-15
-
-
-图解HTTP|Update
----|---
-[图解HTTP](/DiagramHttp)|2017-02-17
-
 ## 技术栏目
 
 Android Studio|更新时间
@@ -71,3 +38,35 @@ Other|更新时间
 [微信支付](/Other/WeChatPay)|2016-06-03
 [移动支付](/Other/APPPay)|2016-06-02
 [支付宝支付](/Other/ZhiFuBaoPay)|2016-06-07
+
+
+## 读书栏目
+Algorithms(算法)|Update
+---|---
+[总章update...](/Algorithms/readme.md)|2016-12-14
+[第一章:基础](/Algorithms/chapter1/readme.md)|2016-12-14
+[第二章:排序](/Algorithms/chapter2/readme.md)|2016-12-28
+
+
+Head First 设计模式|Update
+---|---
+[读书总结](https://github.com/siyehua/DesignPatterns)|2017-02-06
+[1.设计模式入门(策略模式)](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter1)|2017-02-06
+[2.观察者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter2)|2017-02-07
+[3.装饰者模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter3)|2017-02-08
+[4.工厂模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter4)|2017-02-09
+[5.单例模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter5)|2017-02-10
+[6.命令模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter6)|2017-02-11
+[7.适配器与外观模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter7)|2017-02-12
+[8.模板方法模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter8)|2017-02-13
+[9.迭代器与组合模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter9)|2017-02-14
+[10.状态模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter10)|2017-02-15
+[11.代理模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter11)|2017-02-15
+[12.复合模式](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chapter12)|2017-02-15
+[13.与设计模式相处](https://github.com/siyehua/DesignPatterns/tree/master/code/src/main/java/com/siyehua/chpter13)|2017-02-15
+
+
+图解HTTP|Update
+---|---
+[图解HTTP](/DiagramHttp)|2017-02-17
+
