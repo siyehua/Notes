@@ -69,6 +69,7 @@ tvAdd.setOnClickListener {
 ```
 
 <br/>让我们看看动画效果：<br/>
+![layout_transition.mp4](layout_transition.mp4)
 <video src="layout_transition.mp4" controls="controls" width="300">
 您的浏览器不支持 video 标签。
 </video>
