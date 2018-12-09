@@ -69,10 +69,7 @@ tvAdd.setOnClickListener {
 ```
 
 <br/>让我们看看动画效果：<br/>
-![layout_transition.mp4](layout_transition.mp4)
-<video src="layout_transition.mp4" controls="controls" width="300">
-您的浏览器不支持 video 标签。
-</video>
+![layout_transition.mp4](layout_transition.gif)
 
 
 ### 各种转场动画
@@ -93,9 +90,7 @@ Fade|淡入淡出
 Slide|滑入滑出
 
 <br/>下面是使用 Explode 转场动画的效果：<br/>
-<video src="explore_transition.mp4" controls="controls" width="300">
-您的浏览器不支持 video 标签。
-</video>
+![explore_transition.mp4](explore_transition.gif)
 
 
 除了系统提供的转场动画，也可以自定义转场动画，只要继承 Transition，并实现对应的方法即可。
@@ -109,9 +104,7 @@ Slide|滑入滑出
 
 ### Activity 共享元素动画
 讲共享元素之前，先看看设计发的一个动画效果：<br/>
-<video src="desgin_add.mp4" controls="controls" width="300">
-您的浏览器不支持 video 标签。
-</video>
+![desgin_add.mp4](desgin_add.gif)
 
 这个动效要求在两个 Activity 之间做动画，当时有少先队员提议改成碎片，有红领巾提议使用Activity 的共享元素动画。改成两个 Fragment 之间做动画效果，无疑是比较容易的，动画效果好实现，但自定义首页的代码结构，不好用碎片实现。<br/>
 使用共享元素做动画，也可以实现这个效果,例如 A 启动 B，A 中这么设置：<br/> 
@@ -143,9 +136,7 @@ Slide|滑入滑出
 ```
 
 <br/>效果如下图所示：<br/>
-<video src="ContactsAnim.mp4" controls="controls" width="300">
-您的浏览器不支持 video 标签。
-</video>
+![ContactsAnim.mp4](ContactsAnim.gif)
 
 
 共享元素动画可以实现开头中视频所提效果，但该动画只支持5.0及以上的 API。<br/>开头我们已经提到了，转场动画本身是4.4加入的，而共享元素用到的一个转场动画效果，在5.0之后才实现了，所以目前共享元素动画支持5.0及以上的手机。<br/>
@@ -280,9 +271,7 @@ TransitionManager 源码也非常少，关键是调用TransitionManager.go()方�
 ### ViewOverlay 辅助类
 我们都知道，动画执行有一个问题：当一个 View 执行动画时，只能在 View 所在的 ViewGroup 中执行，如果位移到了ViewGroup之外，我们是看不到动画效果的。<br/>
 仔细观察上面的共享元素效果，个人头像所在的 ViewGroup 很可能只是上面那个大的矩形，但是却能做到从屏幕底下一下到上面的效果，突破了所在的 ViewGroup 的限制。<br/>
-<video src="ContactsAnim.mp4" controls="controls" width="300">
-您的浏览器不支持 video 标签。
-</video>
+![ContactsAnim.mp4](ContactsAnim.gif)
 
 实际上是因为共享元素动画依赖 ViewOverlay 来实现了这个效果。ViewOverlay 是 API 18 添加的一个辅助类，当调用 View.getOverlay()方法时，会自动创建一个铺满整个屏幕的，透明的 ViewGroup。<br/>
 ViewOverlay 本身并不是一个 ViewGroup，但它持有一个叫 OverlayViewGroup 的 ViewGroup，这个 ViewGroup 本身不接受任何点击触摸事件，透明无形，只做绘制功能。<br/>
@@ -387,9 +376,8 @@ animators.add(alpha)
 ```
 
 效果如下：<br/>
-<video src="my.mp4" controls="controls" width="300">
-您的浏览器不支持 video 标签。
-</video>
+![my.mp4](my.gif)
+
 
 
 
